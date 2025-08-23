@@ -1,0 +1,66 @@
+/* Styling for past events section */
+.past-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.past-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.past-card .card-img-top {
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    height: 200px;
+}
+
+.past-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.past-card .card-title {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.past-card:hover .card-title {
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.past-card .card-text {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.past-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Ensure container and row alignment */
+.container {
+    max-width: 1200px;
+}
+
+.text-center {
+    color: #222;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .past-card .card-img-top {
+        height: 150px;
+    }
+
+    .past-card .card-title {
+        font-size: 1.1rem;
+    }
+}
